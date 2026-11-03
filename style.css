@@ -1,0 +1,37 @@
+/* Why 99.9% uptime matters — midnight indigo + warm gold, dashboard layout */
+:root{--indigo:#1b2340;--indigo2:#2a3560;--gold:#e8a93d;--gold2:#f5c76a;--paper:#f4f3f0;--ink:#22243a;--muted:#5a5e75;--line:#ddd8c8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.75}
+a{color:#8a5a00;text-decoration:none;font-weight:700}
+a:hover{color:#b57a00;text-decoration:underline}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+header.hero{background:linear-gradient(150deg,var(--indigo) 0%,var(--indigo2) 55%,#3a2f1a 100%);color:#fff;padding:58px 0 50px;border-bottom:6px solid var(--gold)}
+header.hero .kicker{color:var(--gold2);text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:700;font-family:Arial,Helvetica,sans-serif}
+header.hero h1{font-size:2.4rem;line-height:1.25;margin:14px 0 16px}
+header.hero p.lead{font-size:1.1rem;color:#d9dce8;max-width:830px;font-family:Arial,Helvetica,sans-serif}
+header.hero p.lead a{color:var(--gold2)}
+.cta{display:inline-block;background:var(--gold);color:#1b2340;padding:13px 28px;border-radius:8px;font-weight:800;margin-top:22px;font-family:Arial,Helvetica,sans-serif}
+.cta:hover{background:var(--gold2);text-decoration:none;color:#1b2340}
+.cta.ghost{background:transparent;color:#fff;border:2px solid var(--gold);margin-left:10px}
+main{padding:36px 0 10px}
+section.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px 32px;margin-bottom:24px}
+h2{color:var(--indigo);font-size:1.55rem;margin-bottom:12px;border-left:5px solid var(--gold);padding-left:12px;font-family:Arial,Helvetica,sans-serif}
+p{margin-bottom:12px}
+ol{margin:8px 0 14px 22px}
+li{margin-bottom:7px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:18px 0}
+.stat{background:#f8f6ef;border:1px solid var(--line);border-top:5px solid var(--indigo);border-radius:10px;padding:20px;text-align:center}
+.stat.highlight{border-top-color:var(--gold);background:#fff8e6}
+.stat .big{display:block;font-size:2.2rem;font-weight:800;color:var(--indigo);font-family:Arial,Helvetica,sans-serif}
+.stat p{font-family:Arial,Helvetica,sans-serif;font-size:.95rem;color:var(--muted);margin:0}
+section.verdict{border:2px solid var(--gold);background:#fffdf4}
+footer{background:var(--indigo);color:#d9dce8;padding:44px 0 30px;margin-top:10px;font-family:Arial,Helvetica,sans-serif}
+footer h2{color:#fff;border-left-color:var(--gold)}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;margin-top:16px}
+footer h4{color:var(--gold2);margin-bottom:8px;font-size:.98rem}
+footer ul{list-style:none;margin:0}
+footer li{margin-bottom:5px}
+footer a{color:#d9dce8;font-weight:400;font-size:.92rem}
+footer a:hover{color:#fff}
+footer .fine{border-top:1px solid #3a4066;margin-top:26px;padding-top:16px;font-size:.85rem;color:#9aa0bd}
+@media(max-width:640px){header.hero h1{font-size:1.8rem}section.card{padding:22px 18px}.cta.ghost{margin-left:0;margin-top:10px}}
